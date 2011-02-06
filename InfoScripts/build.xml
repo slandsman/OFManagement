@@ -1,0 +1,27 @@
+<project default="compile">
+
+	<property name="lib" value="OFLib.scpt"/>
+	<property name="target.loc" value="Contents/Resources/Scripts/"/>
+
+	<target name="compile" 
+		depends="compile.EndOfDay, compile.StartOfDay, compile.PeriodicCheckin"/>
+		
+	<target name="compile.EndOfDay">
+		<copy file="${lib}"
+			todir="End Of Day.scptd/${target.loc}"
+			overwrite="true"/>
+	</target>
+	
+	<target name="compile.StartOfDay">
+		<copy file="${lib}"
+			todir="Start Of Day.scptd/${target.loc}"
+			overwrite="true"/>	
+	</target>
+	
+	<target name="compile.PeriodicCheckin">
+		<copy file="${lib}"
+			todir="Periodic Check-In.scptd/${target.loc}"
+			overwrite="true"/>	
+	</target>
+		
+</project>
