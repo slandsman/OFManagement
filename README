@@ -1,0 +1,16 @@
+What is it?
+A set of scripts to aid in the management and tracking of OmniFocus tasks and projects.
+
+Contents
+
+InfoScripts
+	OFLib - an applescript library to pull information from an omnifocus document
+	Start Of Day - an applescript that posts a set of analytics to twitter
+	End Of Day - an applescript that posts a set of analytics to twitter
+	Periodic Check-In - an applescript that posts a set of analytics to twitter
+
+ManipulationScripts
+	Promote - Advance status of a task item from none -> @soon -> @nextweek -> flagged -> flagged + @todasy
+	Demote - Demote status
+	Clear - remove all status
+
