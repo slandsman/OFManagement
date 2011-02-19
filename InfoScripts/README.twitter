@@ -1,0 +1,19 @@
+The Start Of Day, End of Day, and Periodic Check-In Scripts will output a status 
+to twitter. However, it relies on an external tool,
+twurl - https://github.com/marcel/twurl, to do so. To setup twurl, and, therefore,
+twitter posted, do the following:
+
+1. Install twurl via rubygems, by doing:
+	a. install ruby1.9 on your computer (I use ports)
+	b. update rubygems via `sudo gem update --system`
+	c. install twurl via `sudo gem i twurl --source http://rubygems.org`
+2. Get oauth information from twitter via http://dev.twitter.com/apps/new
+3. Authorize twurl for your computer via:
+	twurl authorize -u username -p password      \
+                    --consumer-key the_key       \
+                    --consumer-secret the_secret
+    Where the consumer key and consumer secret come from step (2), above
+
+The result is the username and password are stored on your system, and don't 
+need to be hard coded in the applescripts. If you switch machines, you'll
+need to do the above again on that new system.
