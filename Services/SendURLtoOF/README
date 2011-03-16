@@ -1,0 +1,17 @@
+SendURLtoOF is an automator action to send a Chrome tab's URL to the omnifocus inbox. 
+It should be used as a workflow action for the most flexibility.
+
+The way I have used it is as a service. To do so:
+
+1. Compile the SendURLtoOF project in XCode
+2. Open automator and create a new Service
+3. To the action for the service to SendURLtoOF 
+	(should show up once you compile it in XCode)
+4. Set the input to no input
+5. Save the service with a meaningful name
+5. Go into Automator -> Services -> Services Preferences ...
+6. Find and select the new service you just created in the list
+7. Double click to the right of the service name and put in a keyboard shortcut
+
+With this setup, you should be able to easily put URLs from chrome into OmniFocus
+
