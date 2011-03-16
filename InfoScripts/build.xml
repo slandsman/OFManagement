@@ -4,7 +4,8 @@
 	<property name="target.loc" value="Contents/Resources/Scripts/"/>
 
 	<target name="compile" 
-		depends="compile.EndOfDay, compile.StartOfDay, compile.PeriodicCheckin, compile.DeepDive"/>
+		depends="compile.EndOfDay, compile.StartOfDay, compile.PeriodicCheckin, 
+			compile.DeepDive, compile.TestBed"/>
 		
 	<target name="compile.EndOfDay">
 		<copy file="${lib}"
@@ -30,4 +31,10 @@
 			overwrite="true"/>	
 	</target>
 		
+	<target name="compile.TestBed">
+		<copy file="${lib}"
+			todir="Test Bed.scptd/${target.loc}"
+			overwrite="true"/>	
+	</target>
+
 </project>
